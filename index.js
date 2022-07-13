@@ -12,4 +12,4 @@ const init = overrides => {
 
 const getHeader = name => tracer.currentTrace.context.get(name);
 
-module.exports = Object.assign(init, { getHeader });
+module.exports = Object.assign(init, { getHeader, tracer });
